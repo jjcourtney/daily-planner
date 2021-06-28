@@ -1,7 +1,8 @@
 let dayEl = $("#currentDay");
-let today = moment().format('dddd'); 
+let today = moment().format('dddd, Do MMMM'); 
 
 dayEl.text(today);
+
 
 const currentHour = moment().format('HH');
 
@@ -54,13 +55,6 @@ function createPlanner(){
 
     }
 }
-//     <div class="row time-block">
-//     <p class="hour col-1">
-//         10 AM
-//     </p>
-//     <textarea name="textarea-10" id="" value="Something" class="past col-10"></textarea>
-//     <button class="saveBtn col-1">Save</button>
-// </div>
 
 createPlanner();
 
